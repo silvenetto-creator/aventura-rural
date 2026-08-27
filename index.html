@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Rural</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--incio do cabeçalho-->
+
+    <header>
+        <a href="#hero">Aventura Rural</a>
+        <button class="menu-mobile" aria-label="Abrir menu" aria-expanded="false">
+            ☰    
+    </button>
+    
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#experiencias">Experiências</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--fim do cabeçalho-->
+
+    <main>
+
+        <section id="hero" aria-labelledby="hero-titulo">
+            <figure>
+                <video autoplay muted loop playsinline>        
+                    <source src="images/PixVerse_V6_Image_Text_540P_Vento_tropical_sua.mp4" type="video/mp4">    
+                    </video>
+            </figure>
+             <div class="hero-conteudo">
+    
+                <h1 id="hero-titulo">Viva experiências únicas no campo</h1>
+                <p>Descubra o turismo rural e reconecte-se com a natureza em um ambiente acolhedor e autêntico.</p>
+                <a href="#experiencias">Quero conhecer</a>
+             </div>
+        </section>
+
+        <section id="experiencias" aria-labelledby="experiencias-titulo">
+            <h2 id="experiencias-titulo">Experiências</h2>
+            <p>Conheça algumas das experiências que preparamos para você viver momentos inesquecíveis no campo.</p>
+
+            <div>
+                <article>
+                    <figure>
+                        <img src="images/experiencia-1.jpg" alt="Imagem da experiência 1">
+                    </figure>
+                    <h3>Experiência 1</h3>
+                    <p>Viva momentos de aventura na água, explorando a natureza de caiaque e aproveitando uma experiência diferente ao lado de quem você gosta.</p>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="images/experiencia-2.jpg" alt="Imagem da experiência 2">
+                    </figure>
+                    <h3>Experiência 2</h3>
+                    <p>Desfrute de momentos de descanso em meio à natureza, com um ambiente tranquilo e acolhedor para aproveitar com a família e os amigos.</p>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="images/experiencia-4.jpg" alt="Imagem da experiência 4">
+                    </figure>
+                    <h3>Experiência 3</h3>
+                    <p>Conheça uma experiência que combina boa comida,
+                        ambiente agradável e momentos especiais para compartilhar
+                        com quem você gosta.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre" aria-labelledby="sobre-titulo">
+            <figure>
+                <img src="images/sobre.jpg" alt="Imagem sobre a Aventura Rural">
+            </figure>
+
+            <div>
+                <h2 id="sobre-titulo">Sobre</h2>
+                <p>A Aventura Rural é uma empresa dedicada a oferecer experiências autênticas no campo. Nosso objetivo é aproximar visitantes da natureza, da cultura local e dos costumes rurais, com atendimento acolhedor e momentos memoráveis.</p>
+                <p>Texto provisório para apresentação da história, valores e proposta da empresa.</p>
+            </div>
+        </section>
+
+        <section id="galeria" aria-labelledby="galeria-titulo">
+            <h2 id="galeria-titulo">Galeria</h2>
+        
+            <div class="galeria-container">
+        
+                <button class="galeria-btn anterior" aria-label="Foto anterior">
+                    &#10094;
+                </button>
+        
+                <div class="galeria">
+        
+                    <figure>
+                        <img src="images/galeria-1.jpg" alt="Foto da galeria 1">
+                    </figure>
+        
+                    <figure>
+                        <img src="images/galeria-2.jpg" alt="Foto da galeria 2">
+                    </figure>
+        
+                    <figure>
+                        <img src="images/galeria-3.jpg" alt="Foto da galeria 3">
+                    </figure>
+        
+                    <figure>
+                        <img src="images/galeria-4.jpg" alt="Foto da galeria 4">
+                    </figure>
+        
+                    <figure>
+                        <img src="images/galeria-5.jpg" alt="Foto da galeria 5">
+                    </figure>
+        
+                    <figure>
+                        <img src="images/galeria-6.jpg" alt="Foto da galeria 6">
+                    </figure>
+        
+                </div>
+        
+                <button class="galeria-btn proxima" aria-label="Próxima foto">
+                    &#10095;
+                </button>
+        
+            </div>
+        </section>
+        <section id="contato" aria-labelledby="contato-titulo">
+
+            <h2 id="contato-titulo">Reserva</h2>
+        
+            <p>
+                Entre em contato conosco para saber mais sobre nossas
+                experiências ou fazer sua reserva.
+            </p>
+        
+            <div class="contato-conteudo">
+        
+                <!-- RESERVA -->
+                <div class="reserva">
+        
+                    <h3>Faça sua reserva</h3>
+        
+                    <form action="#" method="get">
+        
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input 
+                                type="text" 
+                                id="nome" 
+                                name="nome" 
+                                placeholder="Seu nome completo" 
+                                required>
+                        </div>
+        
+                        <div>
+                            <label for="data">Data</label>
+                            <input 
+                                type="date" 
+                                id="data" 
+                                name="data" 
+                                required>
+                        </div>
+        
+                        <div>
+                            <label for="pessoas">Quantidade de pessoas</label>
+                            <input 
+                                type="number" 
+                                id="pessoas" 
+                                name="pessoas" 
+                                min="1" 
+                                placeholder="Ex.: 2" 
+                                required>
+                        </div>
+        
+                        <button type="submit">
+                            Falar pelo WhatsApp
+                        </button>
+        
+                    </form>
+        
+                </div>
+        
+        
+                <!-- LOCALIZAÇÃO -->
+                <div class="localizacao">
+        
+                    <h3>Onde estamos</h3>
+        
+                    <p>
+                        Rua da Batalha Premirin, s/n<br>
+                        Primirim — Raposa, Maranhão<br>
+                        CEP 65138-000
+                    </p>
+        
+                    <div class="mapa">
+        
+                        <iframe
+                            src="https://www.google.com/maps?q=-2.443513,-44.137538&z=16&output=embed"
+                            loading="lazy"
+                            title="Mapa da localização da Aventura Rural">
+                        </iframe>
+        
+                    </div>
+        
+                    <div class="botoes-navegacao">
+        
+                        <a
+                            href="https://www.google.com/maps/dir/?api=1&destination=-2.443513,-44.137538"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Google Maps
+                        </a>
+        
+                        <a
+                            href="https://waze.com/ul?ll=-2.443513,-44.137538&navigate=yes"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Waze
+                        </a>
+        
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Aventura Rural</strong></p>
+    
+        <ul>
+            <li>WhatsApp: (98) 98133-7419</li>
+            <li>Instagram: @aventurarural</li>
+            <li>Localização: Raposa, Maranhão — Rua da batalha Premirin</li>
+        </ul>
+    </footer>
+
+    <!-- Botão flutuante do Instagram -->
+
+<a
+    href="https://www.instagram.com/aventurarural/"
+    class="instagram-flutuante"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram da Aventura Rural"
+>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+    >
+        <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+        <circle cx="12" cy="12" r="4"></circle>
+        <circle cx="17.5" cy="6.5" r="1"></circle>
+    </svg>
+    <span>Instagram</span>
+</a>
+    
+    
+    <!-- Botão flutuante do WhatsApp -->
+    <a
+        href="https://wa.me/5598981337419?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Aventura%20Rural."
+        class="whatsapp-flutuante"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar com a Aventura Rural pelo WhatsApp">
+    
+        WhatsApp
+    
+    </a>
+    
+    
+    <script src="js/script.js"></script>
